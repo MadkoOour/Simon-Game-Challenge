@@ -4,13 +4,16 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(function() {
+const startUpFn = ()=>{
     if (!started) {
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
     }
-});
+}
+
+$(document).keypress(startUpFn);
+$(".start").click(startUpFn)
 
 $(".btn").click(function(){
     var userChosenColour = $(this).attr("id");

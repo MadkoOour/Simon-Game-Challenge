@@ -27,6 +27,17 @@ body {
   cursor: pointer;
 }
 
+.start{
+  height: 100px;
+  width: 100px;
+  border: none;
+  margin-top: 0;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, #2d5076 50%, #857fc0 100%);
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;
